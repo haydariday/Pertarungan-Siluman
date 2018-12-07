@@ -35,7 +35,6 @@ public class TitleController implements ActionListener {
         frame.getBuatpelatihBtn().addActionListener(this);
         frame.getDataPelatihBtn().addActionListener(this);
         frame.getDataSilumanBtn().addActionListener(this);
-        frame.getCeritaBtn().addActionListener(this);
         frame.getBertarungBtn().addActionListener(this);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
         frame.setLocationRelativeTo(null);

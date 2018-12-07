@@ -6,6 +6,8 @@
 package View;
 
 import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTextPane;
 
 /**
  *
@@ -35,7 +37,6 @@ public class Title extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         buatpelatihBtn = new javax.swing.JButton();
         buatSiluman = new javax.swing.JButton();
-        CeritaBtn = new javax.swing.JButton();
         dataPelatihBtn = new javax.swing.JButton();
         dataSilumanBtn = new javax.swing.JButton();
         bertarungBtn = new javax.swing.JButton();
@@ -47,7 +48,6 @@ public class Title extends javax.swing.JFrame {
         setForeground(java.awt.Color.black);
         setMaximumSize(new java.awt.Dimension(1024, 768));
         setMinimumSize(new java.awt.Dimension(1024, 768));
-        setPreferredSize(new java.awt.Dimension(1024, 768));
         setResizable(false);
         setSize(new java.awt.Dimension(1024, 768));
 
@@ -91,11 +91,6 @@ public class Title extends javax.swing.JFrame {
         buatSiluman.setForeground(java.awt.Color.white);
         buatSiluman.setText("Buat Siluman");
 
-        CeritaBtn.setBackground(java.awt.Color.black);
-        CeritaBtn.setFont(new java.awt.Font("Square721 BT", 0, 36)); // NOI18N
-        CeritaBtn.setForeground(java.awt.Color.white);
-        CeritaBtn.setText("Cerita...");
-
         dataPelatihBtn.setBackground(java.awt.Color.black);
         dataPelatihBtn.setFont(new java.awt.Font("Square721 BT", 0, 36)); // NOI18N
         dataPelatihBtn.setForeground(java.awt.Color.white);
@@ -118,7 +113,6 @@ public class Title extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(76, 76, 76)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(CeritaBtn)
                     .addComponent(buatSiluman)
                     .addComponent(buatpelatihBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE)
                     .addComponent(dataSilumanBtn)
@@ -129,7 +123,7 @@ public class Title extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(107, Short.MAX_VALUE)
                 .addComponent(bertarungBtn)
                 .addGap(13, 13, 13)
                 .addComponent(buatpelatihBtn)
@@ -139,9 +133,7 @@ public class Title extends javax.swing.JFrame {
                 .addComponent(dataPelatihBtn)
                 .addGap(18, 18, 18)
                 .addComponent(dataSilumanBtn)
-                .addGap(18, 18, 18)
-                .addComponent(CeritaBtn)
-                .addGap(131, 131, 131))
+                .addGap(202, 202, 202))
         );
 
         buatpelatihBtn.getAccessibleContext().setAccessibleName("BuatPelatih");
@@ -190,15 +182,6 @@ public class Title extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    public JButton getCeritaBtn() {
-        return CeritaBtn;
-    }
-
-    public void setCeritaBtn(JButton CeritaBtn) {
-        this.CeritaBtn = CeritaBtn;
-    }
-
     public JButton getBertarungBtn() {
         return bertarungBtn;
     }
@@ -241,7 +224,6 @@ public class Title extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton CeritaBtn;
     private javax.swing.JLabel Judul;
     private javax.swing.JButton bertarungBtn;
     private javax.swing.JButton buatSiluman;
